@@ -6,14 +6,11 @@
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
-      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
-
       <header class="page-header">
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+        <img src="images/profile.jpg" alt="my photo" class="avatar no-print" itemprop="image">
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
@@ -48,27 +45,6 @@
 
       </header>
 
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Experience</h2>
-        </header>
-
-        {% for job in site.data.experience %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
-      </section>
-      <!-- end Experience -->
-      {% endif %}
-
-
       {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
@@ -96,6 +72,26 @@
       <!-- end Education -->
       {% endif %}
 
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-copy">{{ job.summary }}</p>
+          AI Accelerator System Project <ul class="resume-item-list"><li>LLM Workload Analysis & Profiling</li></ul>AI Accelerator System Project <ul class="resume-item-list"><li>LLM Workload Analysis & Profiling</li></ul>
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Experience -->
+      {% endif %}
 
       {% if site.resume_section_projects %}
       <!-- begin Projects -->
@@ -232,8 +228,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">© 2024 <a href="mailto:{{ site.resume_contact_email }}">Soowon Oh</a>.</p>
       </footer>
 
     </div>

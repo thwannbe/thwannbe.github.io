@@ -1,13 +1,14 @@
 # Degree
-- degree: Bachelor of Arts, Human Rights
-  uni: Yale University
-  year: 2004 &mdash; 2008
+- degree: Master of Science in Computer Science and Engineering
+  uni: Seoul National University
+  year: 2014 &mdash; 2016
   awards:
-    - award: Summa Cumme Laude graduate
-  summary: If you had any meaningful roles at college, feel free to write about them here
+    - award: Design and Implementation of the A2 Operating System on the Intel Single-Chip Cloud Computer (SCC)
+  # summary: You can choose to have either a single or multiple awards
 
-- degree: High School Diploma
-  uni: Springfield High School
-  year: 2004
-  award: Most likely to succeed
-  summary: You can choose to have either a single or multiple awards
+- degree: Bachelor of Science in Electrical & Electronic Engineering, Minor in Computer Science
+  uni: Yonsei University
+  year: 2008 &mdash; 2014
+  # awards:
+  #   - award: Summa Cumme Laude graduate
+  # summary: If you had any meaningful roles at college, feel free to write about them here
