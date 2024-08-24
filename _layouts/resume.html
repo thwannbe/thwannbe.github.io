@@ -36,13 +36,6 @@
           {{ site.resume_header_intro }}
         </div>
 
-        {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-        {% elsif site.resume_looking_for_work == 'no' %}
-        <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-        {% else %}
-        {% endif %}
-
       </header>
 
       {% if site.resume_section_education %}
@@ -85,7 +78,6 @@
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
           <p class="resume-item-copy">{{ job.summary }}</p>
-          AI Accelerator System Project <ul class="resume-item-list"><li>LLM Workload Analysis & Profiling</li></ul>AI Accelerator System Project <ul class="resume-item-list"><li>LLM Workload Analysis & Profiling</li></ul>
         </div><!-- end of resume-item -->
         {% endfor %}
 
@@ -228,7 +220,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">© 2024 <a href="mailto:{{ site.resume_contact_email }}">Soowon Oh</a>.</p>
+        <p class="footer-line">© 2024 <a href="mailto:{{ site.resume_contact_email }}">Soowon Oh</a>. Powered by <a href="https://jekyllrb.com">Jekyll</a></p>
       </footer>
 
     </div>
