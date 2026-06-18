@@ -533,6 +533,22 @@ a:hover {
   .topnav {
     grid-column: 1 / -1;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    min-width: 0;
+    margin-right: -28px;
+    padding: 2px 28px 6px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .topnav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topnav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
 
   .page-shell {
@@ -564,7 +580,8 @@ a:hover {
   }
 
   .topnav {
-    gap: 6px 12px;
+    margin-right: -18px;
+    padding-right: 18px;
   }
 
   .timeline li,
